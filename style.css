@@ -441,6 +441,7 @@ Project Section CSS
   height: 250px;
   box-shadow: 5px 5px 20px rgb(197,195,195);
   margin: 20px;
+  border-radius: 10%;
 }
 
 @media (max-width: 1500px){
