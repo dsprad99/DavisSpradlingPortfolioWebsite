@@ -61,8 +61,8 @@
                     <h3 class="about-subsection-header">About</h3>
                     <hr/>
                     <p class="about-subtext">
-                        Sophmore Computer Science student at University of 
-                        North Carolina at Charlotte with a focus in Software Engineering.
+                        Senior Computer Science student at University of 
+                        North Carolina at Charlotte with a focus in AI and Robotics.
                         With being a full time student I also work a part time job at 
                         the school as an IT Technician to assist teachers and students 
                         with any technical issues they may have.
@@ -111,33 +111,79 @@
                 <div class = "project-card">
                     <img class="project-image" src="image1PortProject.jpeg" alt="Project One Image"/>
                     <h3>Non-Profit Seeker</h3>
-                    <p class="subtext">Award winning Hack@Davidson project that allows users to look up non-profits</p>
-                    <hr/>
+                    <p class="subtext">Award winning Hack@Davidson project that allows users to look up non-profits.</p>
+                    <hr class="line-style"/>
                     <a href="https://github.com/dsprad99/nonPofitSeeker"><p class="view-subtext">Repository Link</p></a>
+                    <buttton id="showButtonNonProfitSeeker"><p class="view-subtext">Learn More</p></button>
                 </div>
                 <div class = "project-card">
-                    <img class="project-image" src="image2PortProject.jpeg" alt="Project One Image"/>
-                    <h3>Neuse River Landscape</h3>
-                    <p class="subtext">Website that allows cliental to easily contact or book appoitments for landscaping</p>
-                    <hr/>
-                    <a href="https://github.com/dsprad99/NeuseRiverLandscape.com"><p class="view-subtext">Repository Link</p></a>
+                    <img class="project-image" src="niner_norm.png" alt="Project One Image"/>
+                    <h3>Niner Social</h3>
+                    <p class="subtext">Social media app for UNC Charlotte students developed in software engineering team.</p>
+                    <hr class="line-style"/>
+                    <a href="https://github.com/dsprad99/p5" class="repository-link-style"><p class="view-subtext">Repository Link</p></a>
+                    <buttton id="showButtonNeuseRiver"><p class="view-subtext">Learn More</p></button>
                 </div>
                 <div class = "project-card">
-                    <img class="project-image" src="imagePortProject3.png" alt="Project One Image"/>
-                    <h3>Stock Market Predictor</h3>
-                    <p class="subtext">Program that simulates market recovery after the 2008 crash</p>
-                    <hr/>
-                    <a href="https://github.com/dsprad99/stockModelPredictor"><p class="view-subtext">Repository Link</p></a>
+                    <img class="project-image" src="charlotte.jpg" alt="Project One Image"/>
+                    <h3>theAdvisor</h3>
+                    <p class="subtext">Project apart of my undergraduate research that acts as a graph network of research data.</p>
+                    <hr class="line-style"/>
+                    <a href="https://github.com/dsprad99/LargeScaleEntityMatchingForTheAdvisor" class="repository-link-style"><p class="view-subtext">Repository Link</p></a>
+                    <buttton id="showButtonTheAdvisor"><p class="view-subtext">Learn More</p></button>
                 </div>
                 <div class = "project-card">
-                    <img class="project-image" src="imagePortProject4.jpg" alt="Project One Image"/>
-                    <h3>Inventory Management</h3>
-                    <p class="subtext">Program that allows a store owner to manage inventory they have in stock and members</p>
-                    <hr/>
-                    <a href="https://github.com/dsprad99/inventoryManagementSystem"><p class="view-subtext">Repository Link</p></a>
+                    <img class="project-image" src="nfl.png" alt="Project One Image"/>
+                    <h3>NFL Career Prediction</h3>
+                    <p class="subtext">Project using classification/regression models to predict NFL players careers.</p>
+                    <hr class="line-style"/>
+                    <a href="https://github.com/dsprad99/ITCS5156-AppliedMachineLearning-Project" class="repository-link-style"><p class="view-subtext">Repository Link</p></a>
+                    <buttton id="showButtonNFLCareer"><p class="view-subtext">Learn More</p></button>
+                </div>
+                <div id="learnMoreContainer" class="learn-more-container">
+                    <div id="learnMoreCardNonProfitSeeker" class="learn-more-card-profit-seeker">
+                        <p class="header-learn-more-card">Non-Profit Seeker</p>
+                        <p class="body-learn-more-card">Non-Profit Seeker is an award winning project of Hack@Davidson for "Technology of Best Use". Through using data provided by the DOL 5500, we used a set of "indicators"
+                            in order to help us rate how good a non-profit is. The equation that was formaulated takes in a mutlitiude of metrics made public through
+                            the DOL 5500 in order to rate a given non-profit. After the formulas were created, a website was made which makes these non-profits 
+                            searchable in an easy, user friendly manner.
+                        </p>
+                        <img class="nonprofit-learn-more-image" src="hackathon_picture.jpg">
+                        <button id="exitButtonNonProfit" class="exit-button">X</button>
+                    </div>
+                    <div id="learnMoreNeuseRiver" class="learn-more-card-neuse-river">
+                        <p class="header-learn-more-card">Niner Social</p>
+                        <p class="body-learn-more-card">Social media app created for UNC Charlotte students developed within a 5-person team utizlizing 
+                            SCRUM methodology and the MERN stack. Worked as a software engineer on the team in which I developed the login process for users that 
+                            allowed users to both login and sign up. Also worked on a portion of the project that created a timeline of all posts in 
+                            synchronous order of date uploaded.
+                        </p>
+                        <button id="exitButtonNeuseRiver" class="exit-button">X</button>
+                    </div>
+                    <div id="learnMoreTheAdvisor" class="learn-more-card-theAdvisor">
+                        <p class="header-learn-more-card">theAdvisor</p>
+                        <p class="body-learn-more-card">TheAdvisor is a project that I have worked on for a good majority of my undergruduate with the main focus of 
+                            large-scale entity matching working with high volume data. Utlizing inexact matching algorithms such as k-mer hashing and levenshtein distance
+                            I was able to match entites between two datasets that would have taken 15 years but was reduced to 2 days through algorithm development and
+                            the use of parallel computing.
+                        </p>
+                        <img class="theAdvisor-learn-more-image" src="theAdvisor2.jpg">
+                        <button id="exitButtonTheAdvisor" class="exit-button">X</button>
+                    </div>
+                    <div id="learnMoreNFLCareer" class="learn-more-card-NFL-career">
+                        <p class="header-learn-more-card">Predicting NFL Players Career Success</p>
+                        <p class="body-learn-more-card-nfl">Project was apart of a former study that was to be replicated. Utlizing both classification and regression models was 
+                            tasked to try and create a study of predicting if an NFL player will play in the NFL/ how long they will play in the NFL. Was able to uncover
+                            new features that help benefit both models accuracy as well as metrics that better represent the models performance than previously used such 
+                            as confussion matricies, F1-Score, etc.
+                        </p>
+                        <button id="exitButtonNFL" class="exit-button">X</button>
+                    </div>
                 </div>
             </div>
         </section>
+
+
         <!-- contact section -->
     <section class = "contact" id = "contact">
       <div class = "contact-container">
