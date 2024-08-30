@@ -1,0 +1,856 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+
+}
+
+html{
+  scroll-behavior: smooth;
+   scroll-padding-top: 70px;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  background-color: #145da0;
+}
+
+li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style: none;
+  font-size: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+}
+
+.container {
+  width: 1600px;
+  margin: auto;
+}
+
+.subcontainer {
+  width: 85%;
+  margin: auto;
+}
+
+
+/* Navbar Section CSS*/
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+
+}
+
+.nav-branding {
+  font-size: 2rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+#home {
+  display: flex;
+  background-color: #145da0;
+  height: 30rem;
+  width: 100%;
+}
+
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+}
+
+.image {
+  clip-path: circle();
+}
+
+.homeText {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+  width: 12rem;
+}
+
+.wave {
+  line-height: 0;
+  margin-top: -10px;
+}
+
+.wave1 {
+  line-height: 0;
+  margin-bottom: -10px;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #145da0;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}
+
+
+
+/*About Section CSS*/
+
+.sub-section-about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-card{
+  width: 600px;
+  height:500px;
+  box-shadow: 5px 5px 20px rgb(223, 222, 222);
+  margin: 20px;
+}
+
+.about-card:hover{
+  width: 600px;
+  height:500px;
+  box-shadow: 5px 5px 20px rgb(145, 143, 143);
+  margin: 20px;
+}
+
+.skill-card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  top: 50%;
+  transform: translateY(-80%);
+}
+
+.about-subsection-header{
+  font-size: 2.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #145da0;
+}
+
+.about-skill-card{
+  height: 50px;
+  width: 50;
+  margin: 30px;
+}
+
+.about-skill-image{
+  height: 5rem;
+  width: 5rem;
+}
+
+.skill-card-container-row-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.skill-card-container-row-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.skills-subtext{
+  font-size: 1.5rem;
+  color: black;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.about-subtext{
+  font-size: 1.5rem;
+  margin: 3rem 5rem;
+  color:#145da0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.resume-button{
+  height: 4rem;
+  width: 40%;
+  background-color: #145da0;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.resume-button:hover{
+  cursor: pointer;
+  background-color: #61a5e4;
+}
+
+@media (max-width: 1300px){
+  .about-subtext{
+    font-size: 1.2rem;
+    margin: 2rem 2rem;
+    color:#145da0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+@media (max-width:900px){
+
+  .about-card{
+  width: 500px;
+  height:400px;
+  box-shadow: 5px 5px 20px rgb(223, 222, 222);
+  align-items: center;
+  justify-content: center;
+}
+
+.about-card:hover{
+  width: 500px;
+  height:400px;
+  box-shadow: 5px 5px 20px rgb(145, 143, 143);
+  align-items: center;
+  justify-content: center;
+}
+
+  .about-subtext{
+    font-size: 1.1rem;
+    margin: 1.5rem 1.5rem;
+    color:#145da0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+}
+
+@media (max-width:600px){
+
+  .about-card{
+  width: 400px;
+  height: 400px;
+  box-shadow: 5px 5px 20px rgb(223, 222, 222);
+  align-items: center;
+  justify-content: center;
+}
+
+.about-card:hover{
+  width: 400px;
+  height:400px;
+  box-shadow: 5px 5px 20px rgb(145, 143, 143);
+  align-items: center;
+  justify-content: center;
+}
+
+  .about-subtext{
+    font-size: 1.1rem;
+    margin: 1.5rem 1.5rem;
+    color:#145da0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+}
+
+@media (max-width:500px){
+
+  .about-card{
+  width: 250px;
+  height: 400px;
+  box-shadow: 5px 5px 20px rgb(223, 222, 222);
+  align-items: center;
+  justify-content: center;
+}
+
+.about-card:hover{
+  width: 250px;
+  height:400px;
+  box-shadow: 5px 5px 20px rgb(145, 143, 143);
+  align-items: center;
+  justify-content: center;
+}
+
+  .about-subtext{
+    font-size: .9rem;
+    margin: .5rem .8rem;
+    color:#145da0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+  .about-subsection-header{
+  font-size: 2.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  color: #145da0;
+}
+
+.resume-button{
+  height: 4rem;
+  width: 60%;
+  background-color: #145da0;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.about-skill-card{
+  height: 30px;
+  width:  240px;
+  margin: 20px;
+}
+
+.about-skill-image{
+  height: 3rem;
+  width: 3rem;
+}
+
+.skill-card-container-row-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.skill-card-container-row-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+
+.skills-subtext{
+  font-size: 1.2rem;
+  color: black;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+
+}
+
+
+/*
+Project Section CSS
+
+*/
+.project-card {
+  width: 300px;
+  height: 280px;
+  box-shadow: 5px 5px 20px rgb(197,195,195);
+  margin: 20px;
+  border-radius: 10%;
+}
+
+@media (max-width: 1500px){
+  .project-card {
+  width: 250px;
+  height: 290px;
+  box-shadow: 5px 5px 20px rgb(197,195,195);
+  }
+
+  .subtext{
+    font-size: .95rem;
+  }
+
+  .project-title{
+    font-size: 1.6rem;
+  }
+  .line-style{
+    top: .2rem;
+  }
+
+}
+
+@media (max-width: 1200px){
+  .project-card {
+  width: 200px;
+  height: 280px;
+  box-shadow: 5px 5px 20px rgb(197,195,195);
+  }
+
+  .subtext{
+    font-size: .8rem;
+  }
+
+  .project-title{
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1000px){
+  .project-card {
+  width: 300px;
+  height: 280px;
+  box-shadow: 5px 5px 20px rgb(197,195,195);
+  margin: 3rem
+  }
+
+  .project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-section-project{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+  
+  
+}
+
+
+.project-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-section-project{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    margin: 7rem 0;
+    
+}
+
+.project-image{
+    margin-top: 25px;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 125px;
+}
+
+.project-title{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 3rem;
+    color: #145da0;
+}
+
+.subtext{
+  margin-bottom: 5px;
+}
+
+.view-subtext{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+  color: #145da0;
+  font-size: .9rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.view-subtext:hover{
+  cursor: pointer;
+  color: #61a5e4;
+  text-decoration-line: underline
+}
+
+.project-card:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgb(145, 145, 145);
+}
+
+/*Contact*/
+
+.contact-container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+.contact-title{
+  padding: 0.6rem 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color:#145da0;
+  font-size: 2rem;
+}
+
+.contact-text{
+    margin: 0.6rem 0;
+}
+
+.contact .row{
+    margin-top: 2rem;
+}
+.contact .row > div{
+    margin: 2rem 0;
+    padding: 1rem 0;
+}
+.contact .row > div h2{
+    font-size: 1.4rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contact-left form input,
+.contact-left form textarea{
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    padding: 0.8rem 0.6rem;
+    border: none;
+    border-bottom: 1.5px solid #f0f0f0;
+    outline: 0;
+}
+.contact-left form input::placeholder,
+.contact-left form textarea::placeholder{
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.8;
+}
+.contact-left form input:focus,
+.contact-left form textarea:focus{
+    border-color:#145da0;
+}
+.submit-btn{
+    margin: 1rem 0;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background: #145da0;
+    opacity: 0.9;
+    padding: 0.8rem 3.4rem;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+.submit-btn:hover{
+    background:#61a5e4;
+    cursor: pointer;
+}
+.contact-right div{
+    margin: 2rem 0;
+}
+
+@media screen and (min-width: 768px){
+    .detail .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    .contact .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .contact-right > div:first-child{
+        margin-top: 0;
+    }
+}
+
+.text{
+  color:black;
+}
+
+/*Footer*/
+.footer-container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-text{
+    margin: 0.6rem 0;
+    opacity: 0.8;
+}
+
+.footer{
+    text-align: center;
+    background:#145da0;
+    color: white;
+    padding: 2rem 0;
+    height: 40vh;
+}
+
+.footer .text{
+    opacity: 0.8;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.6rem;
+}
+
+.footer-links a{
+    color: white;
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.footer-links a:hover{
+    background: gray;
+}
+
+.footer-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-more-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+}
+
+.learn-more-card-profit-seeker {
+  display: none;
+  width: 40rem;
+  height: 40rem;
+  background-color: white; /* Set a solid background color */
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  border-radius: 10%;
+  position: relative;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.learn-more-card-neuse-river {
+  display: none;
+  width: 40rem;
+  height: 40rem;
+  background-color: white; /* Set a solid background color */
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  border-radius: 10%;
+  position: relative;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.learn-more-card-theAdvisor {
+  display: none;
+  width: 40rem;
+  height: 40rem;
+  background-color: white; /* Set a solid background color */
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  border-radius: 10%;
+  position: relative;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.learn-more-card-NFL-career {
+  display: none;
+  width: 40rem;
+  height: 40rem;
+  background-color: white; /* Set a solid background color */
+  box-shadow: 5px 5px 20px rgb(197, 195, 195);
+  border-radius: 10%;
+  position: relative;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.exit-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0; /* Change this to your desired background color */
+    border: none;
+    color: #000; /* Change this to your desired text color */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-learn-more-card {
+    position: absolute;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    color:#145da0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+.body-learn-more-card{
+  margin-top: 8rem;
+  width: 26rem;
+  font-size: 1.2rem;
+  color:#145da0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nonprofit-learn-more-image{
+  width: 11rem;
+  height: 11rem;
+  margin-top: 26rem;
+  position: absolute;
+}
+
+.theAdvisor-learn-more-image{
+  width: 13rem;
+  height: 14rem;
+  margin-top: 25rem;
+  position: absolute;
+}
+
+.body-learn-more-card-nfl{
+  margin-top: 12rem;
+  width: 26rem;
+  font-size: 1.2rem;
+  color:#145da0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 1500px){
+ .learn-more-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+}
+
+.body-learn-more-card{
+  margin-top: 8rem;
+  width: 26rem;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color:#145da0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body-learn-more-card-nfl{
+  margin-top: 12rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 26rem;
+  font-size: 1.2rem;
+  color:#145da0;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+}
+
+
+
